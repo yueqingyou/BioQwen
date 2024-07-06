@@ -2,7 +2,9 @@
 
 ## Title
 
-BioQwen: A Small-Parameter, High-Performance Bilingual Model for Biomedical Multi-Tasks
+**BioQwen: A Small-Parameter, High-Performance Bilingual Model for Biomedical Multi-Tasks**
+
+![Fig. 1](img/1.png)
 
 ## Prerequisites
 
