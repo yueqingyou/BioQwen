@@ -6,7 +6,7 @@ The BioQwen model, developed under the MLC-LLM project, showcases advanced capab
 
 ### Download
 
-The BioQwen APK is quite large (greater than 100MB), so it has been hosted on Hugging Face. Please visit the following link to download it: [BioQwen on Hugging Face](https://huggingface.co/yueqingyou/BioQwen).
+The BioQwen APK is greater than 100MB, so it has been hosted on Hugging Face. Please visit the following link to download it: [BioQwen on Hugging Face](https://huggingface.co/yueqingyou/BioQwen/resolve/main/BioQwen.apk?download=true).
 
 ### Model Performance
 
