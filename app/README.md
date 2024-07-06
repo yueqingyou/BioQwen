@@ -4,6 +4,10 @@
 
 The BioQwen model, developed under the MLC-LLM project, showcases advanced capabilities in handling medical queries through a compact, mobile-friendly design. Utilizing INT4 model compression technology, we have successfully reduced the size of BioQwen 0.5B to under 300MB and BioQwen 1.8B to under 1GB. This enables seamless deployment on mobile devices, balancing storage and computational constraints.
 
+### Download
+
+The BioQwen APK is quite large (greater than 100MB), so it has been hosted on Hugging Face. Please visit the following link to download it: [BioQwen on Hugging Face](https://huggingface.co/yueqingyou/BioQwen).
+
 ### Model Performance
 
 BioQwen's performance, particularly in handling complex medical queries, was evaluated using the cMedQA2 dataset. This dataset poses more challenging queries than WebMedQA, providing a robust test environment to assess the model's practical application in real-world scenarios.
