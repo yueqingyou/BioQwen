@@ -1,0 +1,11 @@
+torch
+pandas
+bitsandbytes
+gradio
+accelerate
+trl
+zhconv
+peft
+datasets
+transformers
+matplotlib
