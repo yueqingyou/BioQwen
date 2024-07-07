@@ -1,17 +1,13 @@
-# README
-
-## Title
-
-**BioQwen: A Small-Parameter, High-Performance Bilingual Model for Biomedical Multi-Tasks**
+# BioQwen: A Small-Parameter, High-Performance Bilingual Model for Biomedical Multi-Tasks
 
 ![Fig. 1](img/1.png)
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - PyTorch
 - bitsandbytes
-- gradio
+- flash_atten
 - datasets
 - transformers
 - peft
@@ -26,6 +22,7 @@ pip install -r requirements.txt
 
 ```
 .
+├── app/
 ├── code/
 │   ├── img/
 │   └── notebook/
@@ -49,6 +46,10 @@ pip install -r requirements.txt
 ```
 
 ## Description of Contents
+
+### app/
+
+This directory contains the download link for the BioQwen mobile deployment APK file.
 
 ### code/
 
