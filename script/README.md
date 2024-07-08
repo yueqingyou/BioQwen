@@ -6,10 +6,10 @@ This repository contains the code for training a QLoRA-based model (`BioQwen`) w
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - PyTorch
 - bitsandbytes
-- gradio
+- flash_atten
 - datasets
 - transformers
 - peft
@@ -17,7 +17,7 @@ This repository contains the code for training a QLoRA-based model (`BioQwen`) w
 
 Install the required packages using:
 ```bash
-pip install torch bitsandbytes gradio datasets transformers peft trl
+pip install torch bitsandbytes flash_atten datasets transformers peft trl
 ```
 or
 ```bash
@@ -32,10 +32,11 @@ pip install -r requirements.txt
 │   ├── COIG-CQIA/
 │   ├── Taiyi_Instruction_Data_001/
 │   ├── MedChatZH/
-│   ├── self_cognition.json
+│   ├── self_cognition.json  # NOT necessary
 ├── model/
 │   ├── BioQwen-stage1-merged/
 │   ├── BioQwen-stage1/
+│   ├── BioQwen-stage2-merged/
 │   ├── BioQwen-stage2/
 ├── script_stage1.py
 ├── script_stage2.py
@@ -48,7 +49,7 @@ The data is stored in the `data` directory and includes various datasets:
 - `COIG-CQIA`
 - `Taiyi_Instruction_Data_001`
 - `MedChatZH`
-- `self_cognition.json`
+- `self_cognition.json`  # NOT necessary
 
 ## Training
 
