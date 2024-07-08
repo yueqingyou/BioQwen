@@ -1,17 +1,13 @@
-# README
-
-## Title
-
-**BioQwen: A Small-Parameter, High-Performance Bilingual Model for Biomedical Multi-Tasks**
+# BioQwen: A Small-Parameter, High-Performance Bilingual Model for Biomedical Multi-Tasks
 
 ![Fig. 1](img/1.png)
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - PyTorch
 - bitsandbytes
-- gradio
+- flash_atten
 - datasets
 - transformers
 - peft
@@ -26,6 +22,7 @@ pip install -r requirements.txt
 
 ```
 .
+├── app/
 ├── code/
 │   ├── img/
 │   └── notebook/
@@ -50,6 +47,10 @@ pip install -r requirements.txt
 
 ## Description of Contents
 
+### app/
+
+This directory contains the download link for the BioQwen mobile deployment APK file.
+
 ### code/
 
 - **img/**: Contains image files related to the project.
@@ -62,17 +63,17 @@ pip install -r requirements.txt
 - **ner/**: Results and outputs related to Named Entity Recognition tasks.
   - **bc5cdr/**: Results for the BC5CDR dataset.
   - **cmeee/**: Results for the CMEEE dataset.
-  - **ncbi/**: Results for the NCBI dataset.
+  - **ncbi/**: Results for the NCBI-DISEASE dataset.
 - **qa/**: Results and outputs related to Question Answering tasks.
-  - **cmedqa2/**: Results for the CMEDQA2 dataset.
+  - **cmedqa2/**: Results for the cMedQA2 dataset.
   - **icliniq/**: Results for the iCliniq dataset.
   - **webmedqa/**: Results for the WebMedQA dataset.
 
 ### script/
 
 - **README.md**: Documentation for the scripts.
-- **script_stage1.py**: Script for Stage 1 training.
-- **script_stage2.py**: Script for Stage 2 training.
+- **script_stage1.py**: Script for Stage 1 training extracted from `BioQwen-manuscript.ipynb`.
+- **script_stage2.py**: Script for Stage 2 training extracted from `BioQwen-manuscript.ipynb`.
 
 ### README.md
 
@@ -80,13 +81,13 @@ This file, providing an overview and instructions for the repository.
 
 ### requirements.txt
 
-File listing all the dependencies required to run the scripts and notebooks in this repository.
+Here is a file listing all the dependencies required to run the scripts and notebooks in this repository. Please note that there might be some dependencies not listed here. Feel free to open an issue to provide feedback.
 
 ## Training
 
 The training is performed in two stages using the scripts provided.
 
-### Stage 1 Training
+### Stage 1 Training OR Stage 2 Training
 
 1. **Load and Filter Data:**
     - Load datasets from various sources.
@@ -95,22 +96,6 @@ The training is performed in two stages using the scripts provided.
 
 2. **Model Setup:**
     - Load the pre-trained model and tokenizer.
-    - Configure BitsAndBytes for efficient training.
-    - Prepare the model for QLoRA/LoRA training.
-
-3. **Training Configuration:**
-    - Define training arguments.
-    - Create a Trainer instance and start training.
-
-### Stage 2 Training
-
-1. **Load and Filter Data:**
-    - Load additional datasets.
-    - Concatenate datasets for stage 2 training.
-    - Tokenize the data with language checks.
-
-2. **Model Setup:**
-    - Load the model from stage 1.
     - Configure BitsAndBytes for efficient training.
     - Prepare the model for QLoRA/LoRA training.
 
