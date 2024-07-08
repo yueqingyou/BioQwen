@@ -20,6 +20,9 @@ Post-deployment, the BioQwen model was subjected to practical application tests 
 
 Two illustrative examples of the BioQwen model's responses are provided:
 
+![HIV Infection Risk Post High-Risk Behavior](img/image1.png)
+![Pregnancy Symptoms and Checkup Frequency](img/image2.png)
+
 1. **HIV Infection Risk Post High-Risk Behavior**:
     - **Original Question (Chinese)**: 
         - 用户描述了两年前经历的高危行为后进行的HIV检测，结果为阴性，但随后出现了咽炎和轻微感冒，担心是否会感染HIV，并询问是否需要再次检测。
