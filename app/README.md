@@ -1,4 +1,4 @@
-## README for BioQwen Model Deployment on Mobile Devices
+## BioQwen Model Deployment on Mobile Devices
 
 ### Overview
 
@@ -39,8 +39,9 @@ Two illustrative examples of the BioQwen model's responses are provided:
 The BioQwen model, when deployed on mobile devices, offers robust, accurate, and compassionate responses to complex medical queries. Its successful deployment and testing on the cMedQA2 dataset demonstrate its practical utility and reliability in real-world applications. The model's compact size, made possible through INT4 compression, ensures it fits within the constraints of mobile device storage and computational capacities, making it an invaluable tool for accessible medical advice and information.
 
 ### Files Included
-- **image1.png**: Screenshot of the BioQwen model's response to a high-risk behavior HIV query.
-- **image2.png**: Screenshot of the BioQwen model's response to a pregnancy symptoms query.
+- **question.txt**: The original Chinese cMedQA2 dataset contains medical questions with some irregular sentence breaks and punctuation usage.
+- **img/image1.png**: Screenshot of the BioQwen model's response to a high-risk behavior HIV query.
+- **img/image2.png**: Screenshot of the BioQwen model's response to a pregnancy symptoms query.
 
 ### Contact
 For any questions or further information, please submit an issue on this repository.
